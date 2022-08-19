@@ -1,0 +1,144 @@
+:root {
+  --clr-accent-400: #d0004c;
+  --clr-accent-200: #ffb5d0;
+
+  --crl-primary-400: #00d084;
+
+  --clr-neutral-100: #003421;
+  --clr-neutral--900: #001a11;
+
+  --font-family-primary: "Open Sans", sans-serif;
+  --font-family-secondary: "Courier Prime", monospace;
+
+  --font-body: var(--font-family-primary);
+  --font-heading: var(--font-family-primary);
+  --font-heading-secondary: var(--font-family-secondary);
+
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 500;
+  --font-weight-bold: 700;
+
+  --font-size-300: 0.875rem;
+  --font-size-400: 1rem;
+  --font-size-500: 1.063rem;
+  --font-size-600: 1.56rem;
+
+  --font-size-body: var(--font-size-400);
+  --font-size-nav: var(--font-size-300);
+  --font-size-heading-primary: var(--font-size-600);
+  --font-size-heading-secondary: var(--font-size-300);
+  --font-size-button: var(--font-size-300);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility Classes */
+.text-primary-400 {
+  color: var(--crl-primary-400);
+}
+.text-accent-400 {
+  color: var(--clr-accent-400);
+}
+.text-accent-200 {
+  color: var(--clr-accent-200);
+}
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+.text-neutral-900 {
+  color: var(--clr-neutral--900);
+}
+
+.fw-bold {
+  font-weight: var(--font-weight-bold);
+}
+.fw-semi-bold {
+  font-weight: var(--font-weight-semi-bold);
+}
+.fw-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.fs-heading-primary {
+  font-size: var(--font-size-heading-primary);
+}
+.fs-heading-secondary {
+  font-size: var(--font-size-heading-secondary);
+}
+
+.bg-primary-400 {
+  background-color: var(--crl-primary-400);
+}
+.bg-accent-400 {
+  background-color: var(--clr-accent-400);
+}
+.bg-accent-200 {
+  background-color: var(--clr-accent-200);
+}
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+.bg-neutral-900 {
+  background-color: var(--clr-neutral--900);
+}
