@@ -8,8 +8,8 @@
   --clr-neutral-100: #003421;
   --clr-neutral--900: #001a11;
 
-  --font-family-primary: "Open Sans", sans-serif;
-  --font-family-secondary: "Courier Prime", monospace;
+  --font-family-primary: 'Roboto Mono', monospace;
+  --font-family-secondary: 'IBM Plex Sans', sans-serif;
 
   --font-body: var(--font-family-primary);
   --font-heading: var(--font-family-primary);
@@ -206,9 +206,10 @@ nav {
 .showcase-area {
   padding: 2em 0;
 }
-.showcase-area img{
-  width: 100%;
-  height: 600px;
+
+.showcase-area img {
+  width: 800px;
+  height: 550px;
 }
 
 .showcase-area .hero-section-image {}
@@ -217,8 +218,14 @@ nav {
 .featured-blog-title {
   font-size: var(--font-size-600);
   font-weight: var(--font-weight-bold);
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-primary);
+
+  font-family: 'Familjen Grotesk', sans-serif;
+  ;
   max-width: 80%;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
 }
 
 /* Right Side */
@@ -277,6 +284,7 @@ nav {
 
 .card-custom {
   border: none;
+  border-radius: 0;
 }
 
 .row-custom {
