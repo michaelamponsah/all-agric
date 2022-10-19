@@ -59,6 +59,7 @@ html:focus-within {
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 /* Set core body defaults */
@@ -156,8 +157,8 @@ picture {
   background-color: var(--clr-neutral--900);
 }
 
-.container {
-  width: 80%;
+.custom-container {
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -195,23 +196,25 @@ nav {
 .navigation--actions-wrapper>ul li {
   margin-left: 2em;
 }
-.nav--quick-links>ul li a:hover{
+
+.nav--quick-links>ul li a:hover {
   color: var(--crl-primary-400);
 }
 
 
 /* SHOWCASE AREA / FEATURED BLOG SECTION */
-.showcase-area{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 2em;
-  height: 100vh;
-  margin-top: 1.2em;
+.showcase-area {
+  padding: 2em 0;
 }
-.showcase-area--left-side{
+.showcase-area img{
+  width: 100%;
+  height: 600px;
+}
 
-}
-.featured-blog-title{
+.showcase-area .hero-section-image {}
+
+
+.featured-blog-title {
   font-size: var(--font-size-600);
   font-weight: var(--font-weight-bold);
   font-family: var(--font-family-secondary);
@@ -219,23 +222,25 @@ nav {
 }
 
 /* Right Side */
-.featured-post-card{
+.featured-post-card {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
 }
-.featured-post-details-wrapper{
+
+.featured-post-details-wrapper {
   align-self: flex-start;
   margin-left: 1.2em;
 }
 
-.article-pretitle{
+.article-pretitle {
   text-transform: capitalize;
   font-size: var(--font-size-400);
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-bold);
 }
-.article-main-title{
+
+.article-main-title {
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-bold);
   /* font-size: var(--font-size-heading-secondary); */
@@ -243,10 +248,48 @@ nav {
   line-height: 1.11;
   margin: 0.5em 0 0.5em 0;
 }
-.article-main-title:hover{
+
+.article-main-title:hover {
   color: var(--crl-primary-400);
   cursor: pointer;
 }
-.featured-post-details-wrapper .author-name{
+
+.featured-post-details-wrapper .author-name {
   font-size: 0.9rem;
+}
+
+
+
+/*
+  Latest Posts
+*/
+.section-latest-posts {
+  padding: 1em 0;
+}
+
+/*
+  Features
+*/
+.section-farm-to-table {
+  min-height: 70vh;
+  padding: 2em 0;
+}
+
+.card-custom {
+  border: none;
+}
+
+.row-custom {
+  overflow-x: auto !important;
+}
+
+/*
+SECTIOn FOUR
+*/
+.section-four {}
+
+.footer {
+  width: 100%;
+  background-color: #000000;
+  padding: 5em 0;
 }
