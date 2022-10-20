@@ -60,7 +60,6 @@ html,
 body {
   height: 100%;
   overflow-x: hidden;
-  zoom: 80%,
 }
 
 /* Set core body defaults */
@@ -246,7 +245,7 @@ nav {
 
 .showcase-area img {
   width: 800px;
-  height: 480px;
+  height: 450px;
 }
 
 
@@ -275,7 +274,7 @@ nav {
 .card-post-title {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: bolder;
-  font-size: 1.6rem;
+  font-size: 1.125rem;
   line-height: 0.88;
   color: #000000;
 }
@@ -327,7 +326,7 @@ SECTION-LATEST POSTS
 }
 .post-article p{
   color: #808080;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 /*
