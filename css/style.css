@@ -60,6 +60,7 @@ html,
 body {
   height: 100%;
   overflow-x: hidden;
+  zoom: 80%,
 }
 
 /* Set core body defaults */
