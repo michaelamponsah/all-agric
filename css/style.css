@@ -175,17 +175,37 @@ a {
   color: var(--clr-black);
 }
 
+.author-name {
+  color: #0d6efd;
+  color: #021237;
+  font-size: 1.2rem;
+}
+
 /* MAIN NAVIGATION BAR */
 nav {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-300);
   padding: 1em;
   font-weight: var(--font-weight-regular);
+
+  font-size: 1.25rem;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 800;
+  position: fixed;
+
+  z-index: 99;
+  min-width: 100%;
 }
+
 
 .main-navigation-bar {
   justify-content: space-between;
   align-items: center;
+  background-color: #fcfcfc;
+  width: 100%;
+  border-bottom: 1px solid #ffb5d0;
+
+
 }
 
 .nav--left-side .logo {
@@ -201,18 +221,20 @@ nav {
   color: var(--crl-primary-400);
 }
 
+.main {
+  margin-top: 7em;
+}
 
 /* SHOWCASE AREA / FEATURED BLOG SECTION */
 .showcase-area {
   padding: 2em 0;
+  min-height: 100vh;
 }
 
 .showcase-area img {
   width: 800px;
-  height: 550px;
+  height: 480px;
 }
-
-.showcase-area .hero-section-image {}
 
 
 .featured-blog-title {
@@ -220,12 +242,29 @@ nav {
   font-weight: var(--font-weight-bold);
   font-family: var(--font-family-primary);
 
-  font-family: 'Familjen Grotesk', sans-serif;
-  ;
-  max-width: 80%;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 1;
+  font-family: 'IBM Plex Sans', sans-serif;
+  max-width: 85%;
+  font-weight: bolder;
+  font-size: 2.8rem;
+  line-height: 0.88;
+  color: #000000;
+}
+
+.featured-card-title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  max-width: 85%;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  line-height: 0.88;
+  color: #000000;
+}
+
+.card-post-title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  line-height: 0.88;
+  color: #000000;
 }
 
 /* Right Side */
@@ -267,6 +306,8 @@ nav {
 
 
 
+
+
 /*
   Latest Posts
 */
@@ -285,19 +326,35 @@ nav {
 .card-custom {
   border: none;
   border-radius: 0;
+  padding: 0;
 }
 
 .row-custom {
   overflow-x: auto !important;
 }
 
+
+
+
 /*
-SECTIOn FOUR
+SECTION/TECH
 */
-.section-four {}
+.section-tech {
+  color: #36454F;
+  padding: 3em 0;
+}
 
 .footer {
   width: 100%;
-  background-color: #000000;
+  background-color: #dbeefa;
   padding: 5em 0;
+}
+
+
+
+
+@media screen and (max-width: 375px) {
+  .main-navigation-bar {
+    display: none;
+  }
 }
