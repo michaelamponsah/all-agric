@@ -258,7 +258,7 @@ nav {
   max-width: 85%;
   font-weight: bolder;
   font-size: 2.8rem;
-  line-height: 0.88;
+  line-height: 0.9;
   color: #000000;
 }
 
@@ -351,6 +351,7 @@ SECTION-TECH
   }
   .featured-blog-title{
     font-size: 1.8rem;
+    width: 100%;
   }
  .showcase-area img{
   height: 250px;
