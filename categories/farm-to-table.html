@@ -18,7 +18,40 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .load-more {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      .load-more:hover {
+        color: #14c435;
+      }
+      .main {
+        margin-top: 8em;
+      }
+      .hero-section{
+        background-color: rgba(135, 189, 252, 0.1);
+        padding: 2em;
+      }
+      .hero-section h1 {
+        font-size: 3.375rem;
+        font-weight: bold;
+      }
+      .hero-section .preamble {
+        font-size: 1.2rem;
+        width: 45%;
+      }
+      @media screen and (max-width: 414px) {
+        .hero-section{
+          padding: 2em 0;
+        }
+        .hero-section .preamble {
+        font-size: 1.2rem;
+        width: 100%;
+      }
+      }
+    </style>
   </head>
 
   <body>
@@ -43,9 +76,139 @@
       </nav>
     </header>
 
-   <main class="">
+    <main class="main">
+      <section class="hero-section">
+        <div class="container">
+         <h1>Farm to Table</h1>
+         <div class="preamble mt-2">
+           Tech startup coverage that breaks down the funding, growth, and
+           long-term trajectory of companies across every stage of the Agric
+           Industry
+         </div>
+         <hr>
+        </div>
+       </section>
+      <!-- FARM TO TABLE-->
+      <section class="section-tech">
+        <div class="container">
+          <h1 class="section-label">Farm to table</h1>
+          <div class="row">
+            <div class="col col-md-6">
+              <div
+                class="row g-0 border-none overflow-hidden flex-md-row mb-4 shadow-none h-md-250 position-relative"
+              >
+                <div class="col d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 category-title"
+                    >Farm to table</strong
+                  >
+                  <h3 class="mb-0 card-post-title">
+                    Agriculture sector groups express concerns about the Agric
+                    sector & Living experiences of farmers & Ghanaians
+                  </h3>
+                  <div class="mb-1 text-muted">Nov 12</div>
+                  <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img src="../images/img-13.jpg" width="350" height="200" />
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-6">
+              <div
+                class="row g-0 border-none overflow-hidden flex-md-row mb-4 shadow-none h-md-250 position-relative"
+              >
+                <div class="col d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 category-title"
+                    >Farm to table</strong
+                  >
+                  <h3 class="mb-0 card-post-title">
+                    Agriculture sector groups express concerns about the Agric
+                    sector & Living experiences of farmers & Ghanaians
+                  </h3>
+                  <div class="mb-1 text-muted">Nov 12</div>
 
-   </main>
+                  <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img src="../images/img-14.jpg" width="350" height="200" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="card bg-transparent shadow-none border-0 p-0 mt-5 mx-3"
+              style="width: 18rem"
+            >
+              <img src="../images/img-15.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <strong class="d-inline-block mb-2 category-title"
+                  >Farm to table</strong
+                >
+                <h5 class="card-title">
+                  Agriculture sector groups express concerns about the Agric
+                  sector & Living experiences...
+                </h5>
+                <div class="mb-1 text-muted">Nov 12</div>
+                <p class="author-name">Author Name</p>
+              </div>
+            </div>
+            <div
+              class="card bg-transparent shadow-none border-0 p-0 mt-5 mx-3"
+              style="width: 18rem"
+            >
+              <img src="../images/img-3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <strong class="d-inline-block mb-2 category-title"
+                  >Farm to table</strong
+                >
+                <h5 class="card-title">
+                  Agriculture sector groups express concerns about the Agric
+                  sector & Living experiences...
+                </h5>
+                <div class="mb-1 text-muted">Nov 12</div>
+                <p class="author-name">Author Name</p>
+              </div>
+            </div>
+            <div
+              class="card bg-transparent shadow-none border-0 p-0 mt-5 mx-3"
+              style="width: 18rem"
+            >
+              <img src="../images/img-4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <strong class="d-inline-block mb-2 category-title"
+                  >Farm to table</strong
+                >
+                <h5 class="card-title">
+                  Agriculture sector groups express concerns about the Agric
+                  sector & Living experiences...
+                </h5>
+                <div class="mb-1 text-muted">Nov 12</div>
+                <p class="author-name">Author Name</p>
+              </div>
+            </div>
+            <a href="#" class="load-more">Load More</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="row container">
+        <div class="col"></div>
+        <div class="col">
+          <p>
+            AllAgric is a future-focused publication that speaks to African
+            innovation and technology in depth
+          </p>
+        </div>
+        <div class="col">
+          <p>Copyright &copy;2022</p>
+          <p>All rights reserved.</p>
+          <p>Privacy & Terms</p>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -176,9 +176,20 @@ a {
 }
 
 .author-name {
-  color: #0d6efd;
-  color: #021237;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.category-title{
+  color: #14c435 !important;
+  font-size: 1.1rem;
+}
+.section-label{
   font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #333;
+  font-weight: bolder;
+  margin-bottom: 1em;
 }
 
 /* MAIN NAVIGATION BAR */
@@ -188,9 +199,10 @@ nav {
   padding: 1em;
   font-weight: var(--font-weight-regular);
 
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-family: 'Roboto Mono', monospace;
-  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
   position: fixed;
 
   z-index: 99;
@@ -203,7 +215,7 @@ nav {
   align-items: center;
   background-color: #fcfcfc;
   width: 100%;
-  border-bottom: 1px solid #ffb5d0;
+  border-bottom: 1px solid rgb(182, 181, 181);
 
 
 }
@@ -254,7 +266,7 @@ nav {
   font-family: 'IBM Plex Sans', sans-serif;
   max-width: 85%;
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 0.88;
   color: #000000;
 }
@@ -267,44 +279,10 @@ nav {
   color: #000000;
 }
 
-/* Right Side */
-.featured-post-card {
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-}
-
-.featured-post-details-wrapper {
-  align-self: flex-start;
-  margin-left: 1.2em;
-}
-
-.article-pretitle {
-  text-transform: capitalize;
-  font-size: var(--font-size-400);
-  font-family: var(--font-family-primary);
-  font-weight: var(--font-weight-bold);
-}
-
-.article-main-title {
-  font-family: var(--font-family-primary);
-  font-weight: var(--font-weight-bold);
-  /* font-size: var(--font-size-heading-secondary); */
-  font-size: 1.2rem;
-  line-height: 1.11;
-  margin: 0.5em 0 0.5em 0;
-}
-
-.article-main-title:hover {
-  color: var(--crl-primary-400);
+.showcase-area a:hover {
+  opacity: 0.8;
   cursor: pointer;
 }
-
-.featured-post-details-wrapper .author-name {
-  font-size: 0.9rem;
-}
-
-
 
 
 
@@ -337,10 +315,24 @@ nav {
 
 
 /*
-SECTION/TECH
+SECTION-LATEST POSTS
+*/
+.section-latest-posts .post-article:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+.post-article h3{
+  color: #000000;
+}
+.post-article p{
+  color: #808080;
+  font-size: 1.15rem;
+}
+
+/*
+SECTION-TECH
 */
 .section-tech {
-  color: #36454F;
   padding: 3em 0;
 }
 
@@ -353,8 +345,14 @@ SECTION/TECH
 
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .main-navigation-bar {
     display: none;
   }
+  .featured-blog-title{
+    font-size: 1.8rem;
+  }
+ .showcase-area img{
+  height: 250px;
+ }
 }
