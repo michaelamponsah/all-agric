@@ -197,9 +197,9 @@ a {
   margin-bottom: 1em;
 }
 
-.read-more{
+.read-more {
   background-color: #e14e01;
-  
+
   padding: 0.5em;
   width: auto;
   color: #fefefe;
@@ -399,6 +399,48 @@ SECTION-TECH
   padding: 3em 0;
 }
 
+/*News Letter*/
+.section-news-letter {
+  padding: 10em 1em;
+}
+
+.section-news-letter .form-wrapper {
+  min-width: 100%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section-news-letter form input {
+  display: block;
+  margin: 25px 0;
+  min-width: 25rem;
+  padding: .5em;
+  font-size: 1.2rem;
+}
+
+.newsletter-title {
+  margin-top: 25px;
+  margin-right: 20px;
+  width: 250px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.btn-subscribe-wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
+.section-news-letter .btn-subscribe {
+  min-width: 9rem;
+  padding: .8em;
+  font-weight: bold;
+  border: none;
+}
+
+
+
 .footer {
   width: 100%;
   background-color: #dbeefa;
@@ -568,6 +610,8 @@ SECTION-TECH
     border-top: 2px solid #f1f1f1;
   }
 
+  
+
 
 }
 
@@ -607,7 +651,7 @@ SECTION-TECH
   }
 
   .featured-blog-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     width: 100%;
   }
 
@@ -632,6 +676,25 @@ SECTION-TECH
 
 
   .post-footer {
-    margin-top: 1em;
+    margin-top: 0.5em;
+  }
+
+  .post-footer span {
+    margin-top: 0.2em;
+    display: block;
+  }
+
+  .section-news-letter .form-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-subscribe-wrapper{
+    justify-content: flex-start;
+  }
+
+  .section-news-letter form input {
+    
+    min-width: 19rem;
   }
 }
