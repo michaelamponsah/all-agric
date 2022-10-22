@@ -14,3 +14,9 @@ document.addEventListener("click", (e) => {
     slider.classList.remove("active");
   });
 });
+
+// Dark theme
+let icon = document.querySelector(".bg-toggle-btn");
+icon.addEventListener("click", (e) => {
+  document.body.classList.toggle("dark-theme")
+});

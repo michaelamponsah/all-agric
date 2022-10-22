@@ -30,9 +30,9 @@
       .main {
         margin-top: 8em;
       }
-      .hero-section{
+      .hero-section {
         padding: 2em;
-        background-color: #010F32;
+        background-color: #010f32;
         color: #fff;
       }
       .hero-section h1 {
@@ -42,37 +42,87 @@
       .hero-section .preamble {
         font-size: 1.2rem;
         width: 45%;
-        color: #C4D2F4;
+        color: #c4d2f4;
       }
       @media screen and (max-width: 414px) {
-        .hero-section{
+        .hero-section {
           padding: 2em 0;
         }
         .hero-section .preamble {
-        font-size: 1.2rem;
-        width: 100%;
-      }
+          font-size: 1.2rem;
+          width: 100%;
+        }
       }
     </style>
   </head>
 
   <body>
     <header>
-      <nav class="container flex main-navigation-bar">
-        <div class="logo"><a href="../">All Agric</a></div>
+      <nav class="flex main-navigation-bar">
+        <div class="logo"><a href="./">Logo goes here</a></div>
         <div class="nav--quick-links">
           <ul class="list-style flex">
-            <li><a href="./tech">Tech</a></li>
-            <li><a href="./africa">Africa</a></li>
-            <li><a href="./farm-to-table">Farm to Table</a></li>
-            <li><a href="./startups">Startups</a></li>
-            <li><a href="./sustainability">Sustainability</a></li>
+            <li><a href="./tech.html">Tech</a></li>
+            <li><a href="./africa.html">Africa</a></li>
+            <li><a href="./farm-to-table.html">Farm to Table</a></li>
+            <li><a href="./startups.html">Startups</a></li>
+            <li>
+              <a href="./sustainability.html">Sustainability</a>
+            </li>
           </ul>
         </div>
         <div class="navigation--actions-wrapper">
           <ul class="list-style flex">
-            <li>Night Mode</li>
-            <li>Menu</li>
+            <!-- <li class="">Light | Dark </li>  -->
+            <li class="bg-toggle-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-moon-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+                />
+              </svg>
+            </li>
+            <li class="menu-btn-content-wrapper">
+              <div class="dropdown" data-slider>
+                <div class="menu-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-list"
+                    viewBox="0 0 16 16"
+                    data-slider-button
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                  </svg>
+                </div>
+                <div class="dropdown-menu">
+                  <ul class="list-style">
+                    <li><a href="./category/tech.html">Tech</a></li>
+                    <li><a href="./category/africa.html">Africa</a></li>
+                    <li>
+                      <a href="./category/farm-to-table.html">Farm to Table</a>
+                    </li>
+                    <li><a href="./category/startups.html">Startups</a></li>
+                    <li>
+                      <a href="./category/sustainability.html"
+                        >Sustainability</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -86,11 +136,11 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             mollitia consequatur reprehenderit adipisci, eius iure?
           </div>
-          <hr>
+          <hr />
         </div>
       </section>
-       <!-- TECH-->
-       <section class="section-tech">
+      <!-- TECH-->
+      <section class="section-tech">
         <div class="container">
           <h1 class="section-label">Tech</h1>
           <div class="row">
@@ -102,11 +152,14 @@
                   <strong class="d-inline-block mb-2 category-title"
                     >Tech</strong
                   >
-                  <h3 class="mb-0 card-post-title">
+                  <h3 class="mb-0 post-title">
                     Agriculture sector groups express concerns about the Agric
                     sector & Living experiences of farmers & Ghanaians
                   </h3>
-                  <div class="mb-1 text-muted">Nov 12</div>
+                  <div class="post-footer">
+                    <span class="author-name">Patrick Nii</span>
+                    <span class="text-muted post-date">October 21, 2022</span>
+                  </div>
                 </div>
                 <div class="col-auto d-none d-lg-block">
                   <img src="./images/img-3.jpg" width="300" height="160" />
@@ -121,13 +174,14 @@
                   <strong class="d-inline-block mb-2 category-title"
                     >Tech</strong
                   >
-                  <h3 class="mb-0 card-post-title">
+                  <h3 class="mb-0 post-title">
                     Agriculture sector groups express concerns about the Agric
                     sector & Living experiences of farmers & Ghanaians
                   </h3>
-                  <div class="mb-1 text-muted">Nov 12</div>
-
-                  <a href="#" class="stretched-link">Continue reading</a>
+                  <div class="post-footer">
+                    <span class="author-name">Patrick Nii</span>
+                    <span class="text-muted post-date">October 21, 2022</span>
+                  </div>
                 </div>
                 <div class="col-auto d-none d-lg-block">
                   <img src="./images/img-1.jpg" width="300" height="160" />
@@ -149,7 +203,7 @@
               />
               <div class="card-body">
                 <strong class="d-inline-block mb-2 category-title">Tech</strong>
-                <h5 class="card-title h6">
+                <h5 class="card-title post-title">
                   Agriculture sector groups express concerns about the Agric
                   sector & Living experiences...
                 </h5>
@@ -170,7 +224,7 @@
               />
               <div class="card-body">
                 <strong class="d-inline-block mb-2 category-title">Tech</strong>
-                <h5 class="card-title h6">
+                <h5 class="card-title post-title">
                   Agriculture sector groups express concerns about the Agric
                   sector & Living experiences...
                 </h5>
@@ -185,7 +239,7 @@
               <img src="./images/img-2.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <strong class="d-inline-block mb-2 category-title">Tech</strong>
-                <h5 class="card-title h6">
+                <h5 class="card-title post-title">
                   Agriculture sector groups express concerns about the Agric
                   sector & Living experiences...
                 </h5>
@@ -193,12 +247,12 @@
                 <p class="author-name">Author Name</p>
               </div>
             </div>
-            <a href="#">Read more on Tech</a>
           </div>
+          <a href="#" class="read-more">Read more on Tech</a>
         </div>
       </section>
     </main>
-    
+
     <!--FOOTER-->
     <footer class="footer">
       <div class="row container">
@@ -221,5 +275,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/app.js" defer></script>
+
   </body>
 </html>

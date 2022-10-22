@@ -31,8 +31,8 @@
         margin-top: 8em;
       }
       .hero-section {
-        background-color: rgba(135, 189, 252, 0.1);
         padding: 2em;
+        background-color: rgba(135, 189, 252, 0.1);
       }
       .hero-section h1 {
         font-size: 3.375rem;
@@ -56,21 +56,71 @@
 
   <body>
     <header>
-      <nav class="container flex main-navigation-bar">
-        <div class="logo"><a href="../">All Agric</a></div>
+      <nav class="flex main-navigation-bar">
+        <div class="logo"><a href="../index.html">Logo goes here</a></div>
         <div class="nav--quick-links">
           <ul class="list-style flex">
-            <li><a href="./tech">Tech</a></li>
-            <li><a href="./africa">Africa</a></li>
-            <li><a href="./farm-to-table">Farm to Table</a></li>
-            <li><a href="./startups">Startups</a></li>
-            <li><a href="./sustainability">Sustainability</a></li>
+            <li><a href="./tech.html">Tech</a></li>
+            <li><a href="./africa.html">Africa</a></li>
+            <li><a href="./farm-to-table.html">Farm to Table</a></li>
+            <li><a href="./startups.html">Startups</a></li>
+            <li>
+              <a href="./sustainability.html">Sustainability</a>
+            </li>
           </ul>
         </div>
         <div class="navigation--actions-wrapper">
           <ul class="list-style flex">
-            <li>Night Mode</li>
-            <li>Menu</li>
+            <!-- <li class="">Light | Dark </li>  -->
+            <li class="bg-toggle-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-moon-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+                />
+              </svg>
+            </li>
+            <li class="menu-btn-content-wrapper">
+              <div class="dropdown" data-slider>
+                <div class="menu-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-list"
+                    viewBox="0 0 16 16"
+                    data-slider-button
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                  </svg>
+                </div>
+                <div class="dropdown-menu">
+                  <ul class="list-style">
+                    <li><a href="./category/tech.html">Tech</a></li>
+                    <li><a href="./category/africa.html">Africa</a></li>
+                    <li>
+                      <a href="./category/farm-to-table.html">Farm to Table</a>
+                    </li>
+                    <li><a href="./category/startups.html">Startups</a></li>
+                    <li>
+                      <a href="./category/sustainability.html"
+                        >Sustainability</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -79,19 +129,19 @@
     <main class="main">
       <section class="hero-section">
         <div class="container">
-          <h1>Sustainability</h1>
+          <h1>Africa</h1>
+          <img src="../images/img-africa.jpg" width="" height="200px" />
           <div class="preamble mt-2">
-            Tech startup coverage that breaks down the funding, growth, and
-            long-term trajectory of companies across every stage of the Agric
-            Industry
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            mollitia consequatur reprehenderit adipisci, eius iure?
           </div>
           <hr />
         </div>
       </section>
-      <!--SUSTAINABILITY-->
+      <!--AFRICA-->
       <section class="section-tech">
         <div class="container">
-          <h1 class="section-label">Sustainability</h1>
+          <h1 class="section-label">Africa</h1>
           <div class="row">
             <div class="col-sm col-md-6">
               <div
@@ -99,17 +149,19 @@
               >
                 <div class="col d-flex flex-column position-static">
                   <strong class="d-inline-block mb-2 category-title"
-                    >Sustainability</strong
+                    >Africa</strong
                   >
-                  <h3 class="mb-0 card-post-title">
+                  <h3 class="mb-0 post-title">
                     Agriculture sector groups express concerns about the Agric
                     sector & Living experiences of farmers & Ghanaians
                   </h3>
-                  <div class="mb-1 text-muted">Nov 12</div>
-                  <a href="#" class="stretched-link">Continue reading</a>
+                  <div class="post-footer">
+                    <span class="author-name">Patrick Nii</span>
+                    <span class="text-muted post-date">October 21, 2022</span>
+                  </div>
                 </div>
                 <div class="col-auto d-none d-lg-block">
-                  <img src="./images/img-1.jpg" width="300" height="160" />
+                  <img src="./images/img-8.jpg" width="300" height="160" />
                 </div>
               </div>
             </div>
@@ -119,18 +171,19 @@
               >
                 <div class="col d-flex flex-column position-static">
                   <strong class="d-inline-block mb-2 category-title"
-                    >Sustainability</strong
+                    >Africa</strong
                   >
-                  <h3 class="mb-0 card-post-title">
+                  <h3 class="mb-0 post-title">
                     Agriculture sector groups express concerns about the Agric
                     sector & Living experiences of farmers & Ghanaians
                   </h3>
-                  <div class="mb-1 text-muted">Nov 12</div>
-
-                  <a href="#" class="stretched-link">Continue reading</a>
+                  <div class="post-footer">
+                    <span class="author-name">Patrick Nii</span>
+                    <span class="text-muted post-date">October 21, 2022</span>
+                  </div>
                 </div>
                 <div class="col-auto d-none d-lg-block">
-                  <img src="./images/img-5.jpg" width="300" height="160" />
+                  <img src="./images/img-9.jpg" width="300" height="160" />
                 </div>
               </div>
             </div>
@@ -141,7 +194,7 @@
               style="width: 18rem"
             >
               <img
-                src="./images/img-13.jpg"
+                src="./images/img-10.jpg"
                 class="card-img-top"
                 alt="..."
                 width="300"
@@ -149,9 +202,9 @@
               />
               <div class="card-body">
                 <strong class="d-inline-block mb-2 category-title"
-                  >Sustainability</strong
+                  >Africa</strong
                 >
-                <h5 class="card-title h6">
+                <h5 class="card-title post-title">
                   Agriculture sector groups express concerns about the Agric
                   sector & Living experiences...
                 </h5>
@@ -164,17 +217,17 @@
               style="width: 18rem"
             >
               <img
-                src="./images/img-6.jpg"
+                src="./images/img-11.jpg"
                 class="card-img-top"
-                alt="..."
                 width="300"
                 height="160"
+                alt="..."
               />
               <div class="card-body">
                 <strong class="d-inline-block mb-2 category-title"
-                  >Sustainability</strong
+                  >Africa</strong
                 >
-                <h5 class="card-title h6">
+                <h5 class="card-title post-title">
                   Agriculture sector groups express concerns about the Agric
                   sector & Living experiences...
                 </h5>
@@ -187,7 +240,7 @@
               style="width: 18rem"
             >
               <img
-                src="./images/img-1.jpg"
+                src="./images/img-12.jpg"
                 class="card-img-top"
                 alt="..."
                 width="300"
@@ -195,9 +248,9 @@
               />
               <div class="card-body">
                 <strong class="d-inline-block mb-2 category-title"
-                  >Sustainability</strong
+                  >Africa</strong
                 >
-                <h5 class="card-title h6">
+                <h5 class="card-title post-title">
                   Agriculture sector groups express concerns about the Agric
                   sector & Living experiences...
                 </h5>
@@ -205,11 +258,13 @@
                 <p class="author-name">Author Name</p>
               </div>
             </div>
+            <a href="#">Read more on Africa</a>
           </div>
-          <a href="#">Read more on Sustainability</a>
         </div>
       </section>
     </main>
+
+    <!--FOOTER-->
     <footer class="footer">
       <div class="row container">
         <div class="col-sm"></div>
@@ -231,5 +286,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/app.js" defer></script>
+
   </body>
 </html>
