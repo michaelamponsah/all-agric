@@ -57,7 +57,7 @@ body {
   width: 24px;
 }
 
-.section-title{
+.section-title {
   font-weight: 900;
   font-size: 1.3rem;
   margin: 1.2em 0;
@@ -119,7 +119,7 @@ body {
   text-decoration: none;
 }
 
-.toolbar > ul:first-child a {
+.toolbar>ul:first-child a {
   text-transform: capitalize;
   font-family: var(--font-family-primary);
   font-weight: 700;
@@ -131,6 +131,81 @@ body {
 .toolbar .nav-actions-wrapper {
   display: flex;
 }
+
+/* Darkmode toggler button */
+
+.form-switch {
+  display: inline-block;
+  cursor: pointer;
+  color: var(--clr-secodary);
+  font-weight: 600;
+  opacity: 0.8;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.form-switch i {
+  position: relative;
+  display: inline-block;
+  margin-right: .5rem;
+  width: 46px;
+  height: 26px;
+  background-color: #e6e6e6;
+  border-radius: 23px;
+  vertical-align: text-bottom;
+  transition: all 0.3s linear;
+}
+
+.form-switch i::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 42px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+  transition: all 0.25s linear;
+}
+
+.form-switch i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+  transform: translate3d(2px, 2px, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-switch:active i::after {
+  width: 28px;
+  transform: translate3d(2px, 2px, 0);
+}
+
+.form-switch:active input:checked+i::after {
+  transform: translate3d(16px, 2px, 0);
+}
+
+.form-switch input {
+  display: none;
+}
+
+.form-switch input:checked+i {
+  background-color: var(--clr-primary);
+}
+
+.form-switch input:checked+i::before {
+  transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0);
+}
+
+.form-switch input:checked+i::after {
+  transform: translate3d(22px, 2px, 0);
+}
+
+/* End of toggler styling */
 
 .nav-actions-wrapper .navigation {
   margin-left: 0.8em;
@@ -203,12 +278,12 @@ body {
   padding: 2.5em 0;
 }
 
-.news-letter-wrapper > h3 {
+.news-letter-wrapper>h3 {
   font-weight: 700;
   font-size: 1.3rem;
 }
 
-.news-letter-wrapper form > div {
+.news-letter-wrapper form>div {
   margin: 0.85em 0;
 }
 
@@ -238,7 +313,8 @@ body {
   color: var(--clr-secodary);
 }
 
-.news-letter input[type="email"], button {
+.news-letter input[type="email"],
+button {
   width: 100%;
   height: 3.5rem;
 }
@@ -249,7 +325,7 @@ body {
 }
 
 .footer-section {
-  margin-top: 0.8em ;
+  margin-top: 0.8em;
 }
 
 .footer-section h3 {
@@ -261,6 +337,7 @@ body {
 .footer-section li {
   padding: 0.5em 0;
 }
+
 .footer-section a {
   text-decoration: none;
   color: var(--clr-secodary);
@@ -274,61 +351,3 @@ body {
   color: var(--clr-secodary);
   opacity: 0.8;
 }
-
-
-
-
-
-/* Darkmode toggler button */
-
-.form-switch {
-  display: inline-block;
-  cursor: pointer;
-  color: var(--clr-secodary);
-  font-weight: 600;
-  opacity: 0.8;
-  -webkit-tap-highlight-color: transparent;
-}
-.form-switch i {
-  position: relative;
-  display: inline-block;
-  margin-right: .5rem;
-  width: 46px;
-  height: 26px;
-  background-color: #e6e6e6;
-  border-radius: 23px;
-  vertical-align: text-bottom;
-  transition: all 0.3s linear;
-}
-.form-switch i::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 42px;
-  height: 22px;
-  background-color: #fff;
-  border-radius: 11px;
-  transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
-  transition: all 0.25s linear;
-}
-.form-switch i::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 22px;
-  height: 22px;
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
-  transform: translate3d(2px, 2px, 0);
-  transition: all 0.2s ease-in-out;
-}
-.form-switch:active i::after {
-  width: 28px;
-  transform: translate3d(2px, 2px, 0);
-}
-.form-switch:active input:checked + i::after { transform: translate3d(16px, 2px, 0); }
-.form-switch input { display: none; }
-.form-switch input:checked + i { background-color: var(--clr-primary); }
-.form-switch input:checked + i::before { transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0); }
-.form-switch input:checked + i::after { transform: translate3d(22px, 2px, 0); }
