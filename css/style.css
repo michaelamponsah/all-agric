@@ -180,3 +180,46 @@ body {
   color: var(--clr-secodary);
   font-size: 1.3rem;
 }
+
+/* Newsletter section */
+.news-letter {
+  padding: 2.5em 0;
+}
+
+.news-letter-wrapper > h3 {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.news-letter-wrapper form > div {
+  margin: 0.85em 0;
+}
+
+.news-letter input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  margin-right: 0.5em;
+  accent-color: var(--clr-secodary);
+}
+
+.news-letter .checkbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.news-letter button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+}
+
+.news-letter input[type="email"] {
+  padding: 0.5em;
+  font-size: 1.2rem;
+  color: var(--clr-secodary);
+}
+
+.news-letter input[type="email"], button {
+  width: 100%;
+  height: 3.5rem;
+}
