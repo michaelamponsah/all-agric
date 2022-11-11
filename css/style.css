@@ -36,7 +36,7 @@ img {
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: #fff;
   font-family: var(--font-family-primary);
 }
 
@@ -51,11 +51,32 @@ body {
   width: 24px;
 }
 
+.section-title{
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: #333;
+}
+
 .post-category {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1rem;
   margin: 1em 0 0 0;
   color: var(--clr-primary);
+}
+
+.section-title-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.pipe {
+  display: inline-block;
+  margin-right: 0.3em;
+  content: "";
+  height: 30px;
+  width: 3px;
+  background-color: #333;
+  opacity: 0.7;
 }
 
 /* Header section */
@@ -103,4 +124,35 @@ body {
 .featured-post-info p {
   font-weight: 500;
   color: #333;
+}
+
+/* Trending post section */
+.trending-post {
+  display: flex;
+  align-items: center;
+}
+
+.trending-post-wrapper::after {
+  display: block;
+  margin: 1em 0;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #333;
+  opacity: 0.6;
+}
+
+.trending-post .thumbanail {
+  width: 100px;
+  height: auto;
+  margin-left: 1em;
+}
+
+.trending .post-title {
+  padding: 0.5em 0;
+  font-size: 1.2rem;
+  line-height: 1.01;
+  font-weight: 800;
+  font-family: var(--font-family-primary);
+  letter-spacing: -.05em;
 }
