@@ -1,6 +1,7 @@
 :root {
   --font-family-primary: 'Poppins', sans-serif;
   --clr-primary: #00d301;
+  --clr-secodary: #333;
 }
 
 /* Basic resets */
@@ -54,7 +55,8 @@ body {
 .section-title{
   font-weight: 900;
   font-size: 1.3rem;
-  color: #333;
+  margin: 1.2em 0;
+  color: var(--clr-secodary);
 }
 
 .post-category {
@@ -75,8 +77,22 @@ body {
   content: "";
   height: 30px;
   width: 3px;
-  background-color: #333;
+  background-color: var(--clr-secodary);
   opacity: 0.7;
+}
+
+.post-title {
+  padding: 0.5em 0;
+  /* font-size: 1.7rem; */
+  line-height: 1.01;
+  /* font-weight: 800; */
+  font-family: var(--font-family-primary);
+  letter-spacing: -.05em;
+}
+
+.post-info p {
+  font-weight: 500;
+  color: var(--clr-secodary);
 }
 
 /* Header section */
@@ -110,23 +126,24 @@ body {
 /* Hero section */
 .hero-section {
   padding: 2em 0;
+  color: var(--clr-secodary);
 }
 
 .featured-post-title {
-  padding: 0.5em 0;
   font-size: 1.7rem;
-  line-height: 1.01;
   font-weight: 800;
-  font-family: var(--font-family-primary);
-  letter-spacing: -.05em;
 }
 
 .featured-post-info p {
   font-weight: 500;
-  color: #333;
+  color: var(--clr-secodary);
 }
 
 /* Trending post section */
+.trending {
+  color: var(--clr-secodary);
+}
+
 .trending-post {
   display: flex;
   align-items: center;
@@ -155,4 +172,11 @@ body {
   font-weight: 800;
   font-family: var(--font-family-primary);
   letter-spacing: -.05em;
+}
+
+/* Category posts section */
+.category .category-post-title {
+  font-weight: 800;
+  color: var(--clr-secodary);
+  font-size: 1.3rem;
 }
