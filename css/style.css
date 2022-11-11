@@ -37,6 +37,7 @@ img {
 
 body {
   background-color: #e5e5e5;
+  font-family: var(--font-family-primary);
 }
 
 /* Utilities */
@@ -48,6 +49,13 @@ body {
 .icon {
   height: 24px;
   width: 24px;
+}
+
+.post-category {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 1em 0 0 0;
+  color: var(--clr-primary);
 }
 
 /* Header section */
@@ -76,4 +84,23 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: var(--clr-primary);
+}
+
+/* Hero section */
+.hero-section {
+  padding: 2em 0;
+}
+
+.featured-post-title {
+  padding: 0.5em 0;
+  font-size: 1.7rem;
+  line-height: 1.01;
+  font-weight: 800;
+  font-family: var(--font-family-primary);
+  letter-spacing: -.05em;
+}
+
+.featured-post-info p {
+  font-weight: 500;
+  color: #333;
 }
