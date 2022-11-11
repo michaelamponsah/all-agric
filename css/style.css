@@ -36,6 +36,11 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   background-color: #fff;
   font-family: var(--font-family-primary);
