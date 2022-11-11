@@ -211,6 +211,8 @@ body {
   font-size: 1.1rem;
   font-weight: 600;
   border: none;
+  background-color: var(--clr-primary);
+  color: #fff;
 }
 
 .news-letter input[type="email"] {
