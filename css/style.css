@@ -1,5 +1,6 @@
 :root {
   --font-family-primary: 'Poppins', sans-serif;
+  --clr-primary: #00d301;
 }
 
 /* Basic resets */
@@ -36,4 +37,43 @@ img {
 
 body {
   background-color: #e5e5e5;
+}
+
+/* Utilities */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+/* Header section */
+.toolbar {
+  background-color: #fff;
+}
+
+.toolbar ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 0;
+}
+
+.toolbar ul a {
+  text-decoration: none;
+}
+
+.socials ul a {
+  text-decoration: none;
+}
+
+.toolbar > ul:first-child a {
+  text-transform: capitalize;
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--clr-primary);
 }
