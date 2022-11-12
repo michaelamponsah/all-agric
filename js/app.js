@@ -1,4 +1,4 @@
-let mobileSliderNv = document.querySelector(".mobile-nav-wrapper")
+let mobileSliderNav = document.querySelector(".mobile-nav-wrapper")
 
 document.addEventListener("click", (e) => {
   const isSliderNav = e.target.matches("[data-slider-icon]");
@@ -7,7 +7,7 @@ document.addEventListener("click", (e) => {
   let currentSliderNav;
   if (isSliderNav) {
     currentSliderNav = e.target.closest("[data-slider]");
-    mobileSliderNv.classList.toggle("mobile-nav-wrapper--active");
+    mobileSliderNav.classList.toggle("mobile-nav-wrapper--active");
   }
 
   // Close all other Slider Navigations that are not in use
