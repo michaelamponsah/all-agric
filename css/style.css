@@ -53,8 +53,8 @@ body {
 }
 
 .icon {
-  height: 24px;
-  width: 24px;
+  height: 30px;
+  width: 30px;
 }
 
 .section-title {
@@ -100,11 +100,20 @@ body {
   color: var(--clr-secodary);
 }
 
+.button-outline {
+  background-color: #fff;
+  border: none;
+  color: #fcb900;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
 /* Header section */
 .toolbar {
   background-color: #fff;
   border-bottom: 1px solid #e6e6e6;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 99;
 }
@@ -112,6 +121,7 @@ body {
 .toolbar > ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1.5em 0;
 }
 
@@ -188,6 +198,12 @@ body {
   font-weight: 100;
   color: var(--clr-secodary);
   font-size: 1.2rem;
+}
+
+.mobile-nave-wrapper--logo-closeicon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
 }
 
 /* Darkmode toggler button */

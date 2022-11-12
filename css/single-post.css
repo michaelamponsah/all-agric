@@ -1,0 +1,19 @@
+.article-wrapper {
+  padding-top: 15em;
+}
+
+.article--photo-credits {
+  margin: 0.8em 0;
+}
+
+.article--photo-credits p .credits-label {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.article-content {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333;
+}
