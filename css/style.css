@@ -103,6 +103,10 @@ body {
 /* Header section */
 .toolbar {
   background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 }
 
 .toolbar ul {
@@ -213,7 +217,8 @@ body {
 
 /* Hero section */
 .hero-section {
-  padding: 2em 0;
+  padding-top: 5em;
+  padding-bottom: 2.5em;
   color: var(--clr-secodary);
 }
 
