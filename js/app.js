@@ -1,18 +1,20 @@
+let mobileSliderNv = document.querySelector(".mobile-nav-wrapper")
+
 document.addEventListener("click", (e) => {
-  const isSliderNav = e.target.matches("[data-slider-button]");
+  const isSliderNav = e.target.matches("[data-slider-icon]");
   if (!isSliderNav && e.target.closest("[data-slider]") != null) return;
 
   let currentSliderNav;
   if (isSliderNav) {
     currentSliderNav = e.target.closest("[data-slider]");
-    currentSliderNav.classList.toggle("active");
+    mobileSliderNv.classList.toggle("mobile-nav-wrapper--active");
   }
 
   // Close all other Slider Navigations that are not in use
-  document.querySelectorAll("[data-slider].active").forEach((slider) => {
-    if (slider == currentSliderNav) return;
-    slider.classList.remove("active");
-  });
+  // document.querySelectorAll("[data-slider].active").forEach((slider) => {
+  //   if (slider == currentSliderNav) return;
+  //   slider.classList.remove("active");
+  // });
 });
 
 // Dark theme
