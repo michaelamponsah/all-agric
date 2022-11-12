@@ -100,6 +100,14 @@ body {
   color: var(--clr-secodary);
 }
 
+.button-outline {
+  background-color: #fff;
+  border: none;
+  color: #fcb900;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
 /* Header section */
 .toolbar {
   background-color: #fff;
