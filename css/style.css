@@ -53,8 +53,8 @@ body {
 }
 
 .icon {
-  height: 24px;
-  width: 24px;
+  height: 30px;
+  width: 30px;
 }
 
 .section-title {
@@ -112,6 +112,7 @@ body {
 .toolbar > ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1.5em 0;
 }
 
@@ -188,6 +189,12 @@ body {
   font-weight: 100;
   color: var(--clr-secodary);
   font-size: 1.2rem;
+}
+
+.mobile-nave-wrapper--logo-closeicon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
 }
 
 /* Darkmode toggler button */
