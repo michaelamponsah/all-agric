@@ -167,7 +167,7 @@ body {
 .mobile-nav-wrapper--active {
   transform: translateX(0%);
   opacity: 1;
-  transition: opacity 300ms ease-out 2ms, transform 300ms ease-out 2ms;
+  transition: opacity 400ms ease-out 2ms, transform 400ms ease-out 2ms;
 }
 
 .mobile-nav-wrapper .search-form {
