@@ -52,6 +52,10 @@ body {
   margin: 0 auto;
 }
 
+.padding-top-5 {
+  padding-top: 5em;
+}
+
 .section-margin {
   margin: 1em o;
 }
