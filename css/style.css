@@ -52,6 +52,10 @@ body {
   margin: 0 auto;
 }
 
+.section-margin {
+  margin: 1em o;
+}
+
 .icon {
   height: 30px;
   width: 30px;
