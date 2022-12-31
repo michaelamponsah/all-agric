@@ -7,26 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All Agric Gh</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/single-post.css">
+  <!-- <link rel="stylesheet" href="./css/single-post.css"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200,300,400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="toolbar">
     <ul class="container">
-      <li><a href="index.html" tabindex="0"> <img src="./assets/images/logo.svg" alt="" width="35px" height="35px"></a>
+      <li>
+        <a href="index.html" tabindex="0"> <img src="./assets/images/logo.svg" alt="AllAgricGh logo" class="logo"></a>
       </li>
       <li class="nav-actions-wrapper">
-        <label class="form-switch">
-          Dark Mode
-          <input type="checkbox">
-          <i></i>
-        </label>
+        <span class="material-symbols-outlined bg-toggle-btn" id="theme-toggler" data-theme-toggler>
+          light_mode
+        </span>
         <nav class="navigation nav-mobile" data-slider>
-          <img src="./assets/images/burger-icon.svg" alt="hamburger menu-icon" class="burger-icon icon" tabindex="0"
-            data-slider-icon>
+          <span class="material-symbols-outlined icon" id="burger-icon" tabindex="0" data-slider-icon>
+            menu
+          </span>
 
           <!-- Sliding menu -->
           <div class="mobile-nav-wrapper">
@@ -74,7 +76,7 @@
       </div>
       <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
       <div class="article--photo-credits">
-        <p><span class="credits-label">Image Credits:</span> Image credits goes here. Eg. Getty Images or unsplash.com
+        <p><span class="credits-label">Image Credits:</span> <br> Image credits goes here. Eg. Getty Images or unsplash.com
         </p>
       </div>
       <p class="article-content">

@@ -17,16 +17,41 @@ document.addEventListener("click", (e) => {
   } else {
     body.style.overflow = "auto"
   }
-
-  // Close all other Slider Navigations that are not in use
-  // document.querySelectorAll("[data-slider].active").forEach((slider) => {
-  //   if (slider == currentSliderNav) return;
-  //   slider.classList.remove("active");
-  // });
 });
 
-// Dark theme
-let icon = document.querySelector(".bg-toggle-btn");
-icon.addEventListener("click", (e) => {
-  document.body.classList.toggle("dark-theme")
+// Dark/Light theme
+let toggleTheme = document.querySelector("[data-theme-toggler]");
+
+const getCurrentTheme = () => {
+  let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  window.localStorage.getItem('AllAgricGh.theme') ? 
+    theme = window.localStorage.getItem('AllAgricGh.theme') : null;
+  return theme;
+}
+
+const loadTheme = (theme) => {
+  const root = document.querySelector(':root');
+  if(theme === 'light') {
+    toggleTheme.innerHTML = 'dark_mode';
+  } else {
+    toggleTheme.innerHTML = 'light_mode';
+  }
+
+  root.setAttribute('color-scheme', `${theme}`);
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  loadTheme(getCurrentTheme());
+})
+
+toggleTheme.addEventListener('click', (e) => {
+  let theme = getCurrentTheme();
+
+  if(theme === 'light') {
+    theme = 'dark';
+  } else {
+    theme = 'light';
+  }
+  loadTheme(theme);
+  window.localStorage.setItem('AllAgricGh.theme', `${theme}`)
 });
