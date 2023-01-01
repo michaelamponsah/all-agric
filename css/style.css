@@ -500,3 +500,9 @@ button {
 .contact-us, .advertise-with-us, .tos, .privacy-policy {
   color: var(--clr-accent-default);
 } 
+
+@media screen and (min-width: 720px) {
+  body {
+    display: none;
+  }
+}
