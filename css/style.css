@@ -1,9 +1,9 @@
 :root {
   --font-family-primary: 'Poppins', sans-serif;
 
-  --clr-bg: #fff;
+  --clr-bg-default: #fff;
   --clr-accent1: #00d301;
-  --clr-accent2: #333;
+  --clr-accent2-default: #333;
   --clr-accent3: #683C11;
   --clr-accent-default: #000;
 
@@ -19,6 +19,12 @@
     --clr-accent2: var(--clr-accent2-dark);
     --clr-accent-default-dark: var(--clr-accent-default-dark);
   }
+}
+
+[color-scheme="light"] {
+  --clr-bg: var(--clr-bg-default);
+  --clr-accent2: var(--clr-accent2-default);
+  --clr-accent-default: var(--clr-accent2);
 }
 
 [color-scheme="dark"] {
@@ -150,7 +156,8 @@ body {
 /* Header section */
 .toolbar {
   background-color: var(--clr-bg);
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -193,6 +200,27 @@ body {
   display: flex;
 }
 
+.slider-socials {
+  display: flex;
+}
+
+.slider-socials li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--clr-bg-default);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-right: 1em;
+  border-radius: 50%;
+  padding: 0.5em;
+}
+
+.slider-socials img {
+  height: 80%;
+}
+
 /* Mobile Menu */
 .mobile-nav-wrapper {
   position: absolute;
@@ -220,7 +248,7 @@ body {
   border: 0.5px solid var(--clr-accent3);
   font-size: 1.25rem;
   padding: 1em;
-  color: var(--clr-accent2);
+  color: var(--clr-accent2-default);
 }
 
 .mobile-nav-wrapper .search-form::placeholder {
@@ -271,7 +299,7 @@ body {
 
 /* Hero section */
 .hero-section {
-  padding-top: 5em;
+  margin-top: 8em;
   padding-bottom: 2.5em;
   color: var(--clr-accent2);
 }
@@ -306,6 +334,10 @@ body {
   opacity: 0.6;
 }
 
+.category-post-wrapper {
+  margin: 1em 0;
+}
+
 .trending-post .thumbanail {
   width: 100px;
   height: auto;
@@ -335,7 +367,6 @@ body {
 /* Newsletter section */
 .news-letter {
   padding: 2.5em 0;
-  opacity: 0.95;
   color: var(--clr-accent-default);
 }
 
@@ -439,10 +470,30 @@ button {
   color: var(--clr-accent-default);
 }
 
+.share-socials {
+  display: flex;
+  margin-top: 2.5em;
+}
+
+.social {
+  display: inline-block;
+  background-color: var(--clr-bg-default);
+  margin-right: 1em;
+  padding: 0.5em;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.social > img {
+  height: 100%;
+}
+
 /* Single category */ 
 .category {
   color: var(--clr-accent-default);
-  opacity: 0.8;
 }
 
 /* Contact us/ advertise /tos privacy-policy*/
