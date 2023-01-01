@@ -156,7 +156,8 @@ body {
 /* Header section */
 .toolbar {
   background-color: var(--clr-bg);
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -247,7 +248,7 @@ body {
   border: 0.5px solid var(--clr-accent3);
   font-size: 1.25rem;
   padding: 1em;
-  color: var(--clr-accent2);
+  color: var(--clr-accent2-default);
 }
 
 .mobile-nav-wrapper .search-form::placeholder {
