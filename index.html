@@ -7,26 +7,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All Agric Gh</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
 </head>
 
 <body>
   <header class="toolbar">
     <ul class="container">
       <li>
-        <a href="index.html" tabindex="0"> <img src="./assets/images/logo.svg" alt="AllAgricGh logo" class="logo"></a>
+        <a href="index.html" tabindex="0"> <img src="./assets/images/logo.png" alt="AllAgricGh logo" class="logo"></a>
       </li>
       <li class="nav-actions-wrapper">
         <span class="material-symbols-outlined bg-toggle-btn" id="theme-toggler" data-theme-toggler>
           light_mode
         </span>
+        <nav class="navigation nav-desktop">
+          <ul class="desktop-nav--list">
+            <li><a href="./single-category.html">Tech</a></li>
+            <li><a href="./single-category.html">Startups</a></li>
+            <li><a href="./single-category.html">FarmEazy</a></li>
+            <li><a href="./single-category.html">Sustainability</a></li>
+          </ul>
+        </nav>
         <nav class="navigation nav-mobile" data-slider>
-            <span class="material-symbols-outlined icon" id="burger-icon" tabindex="0" data-slider-icon>
-              menu
-            </span>
+          <span class="material-symbols-outlined icon" id="burger-icon" tabindex="0" data-slider-icon>
+            menu
+          </span>
           <!-- Sliding menu -->
           <div class="mobile-nav-wrapper">
             <div class="mobile-nave-wrapper--logo-closeicon-wrapper">
@@ -48,10 +58,14 @@
             <br>
             <h3 class="mobile-nav--title">Let's Connect</h3>
             <ul class="mobile-nav--list slider-socials">
-              <li><a href="https://www.facebook.com"><img src="./assets/images/icons/facebook-black.png" alt=""></a></li>
-              <li><a href="https://twitter.com/_mikeamponsah"><img src="./assets/images/icons/twitter-black.png" alt=""></a></li>
-              <li><a href="https://www.instagram.com/_amakpa/"><img src="./assets/images/icons/instagram-black.png" alt=""></a></li>
-              <li><a href="https://www.linkedin.com/in/mikeamponsah/"><img src="./assets/images/icons/linkedin-black.png" alt=""></a></li>
+              <li><a href="https://www.facebook.com"><img src="./assets/images/icons/facebook-black.png" alt=""></a>
+              </li>
+              <li><a href="https://twitter.com/_mikeamponsah"><img src="./assets/images/icons/twitter-black.png"
+                    alt=""></a></li>
+              <li><a href="https://www.instagram.com/_amakpa/"><img src="./assets/images/icons/instagram-black.png"
+                    alt=""></a></li>
+              <li><a href="https://www.linkedin.com/in/mikeamponsah/"><img
+                    src="./assets/images/icons/linkedin-black.png" alt=""></a></li>
             </ul>
           </div>
         </nav>
@@ -59,67 +73,73 @@
     </ul>
   </header>
 
-  <section class="hero-section container">
-    <div>
-      <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
-      <h5 class="post-category">AgriTech</h5>
-      <a href="./single-post.html">
-        <h2 class="featured-post-title post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
-          in
-          Kenya</h2>
-      </a>
-      <div class="post-info">
-        <p>Patrick Laryea</p>
+  <section class="showcase-section container">
+    <div class="hero-section container">
+      <div>
+        <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
+        <h5 class="post-category">AgriTech</h5>
+        <a href="./single-post.html">
+          <h2 class="featured-post-title post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
+            in
+            Kenya</h2>
+        </a>
+        <div class="post-info">
+          <p>Patrick Laryea</p>
+        </div>
       </div>
     </div>
-  </section>
 
-  <section class="trending container">
-    <div class="section-title-wrapper">
-      <span class="pipe"></span>
-      <h2 class="section-title"> Trending</h2>
-    </div>
-    <div class="trending-post-wrapper">
-      <div class="trending-post">
-        <div class="post-details">
-          <h5 class="post-category">AgriTech</h5>
-          <a href="">
+    <div class="trending container">
+      <div class="section-title-wrapper">
+        <span class="pipe"></span>
+        <h2 class="section-title"> Trending</h2>
+      </div>
+      <div class="trending-post-wrapper">
+        <div class="trending-post">
+          <div class="post-details">
+            <h5 class="post-category">AgriTech</h5>
+            <a href="">
+              <h2 class="post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab in Kenya</h2>
+            </a>
+            <div class="featured-post-info">
+              <p>Patrick Laryea</p>
+            </div>
+          </div>
+          <img src="./assets/images/Snapshoot Portfolio-4.png" alt="" class="thumbanail">
+        </div>
+      </div>
+      <div class="trending-post-wrapper">
+        <div class="trending-post">
+          <div class="post-details">
+            <h5 class="post-category">AgriTech</h5>
             <h2 class="post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab in Kenya</h2>
-          </a>
-          <div class="featured-post-info">
-            <p>Patrick Laryea</p>
+            <div class="featured-post-info">
+              <p>Patrick Laryea</p>
+            </div>
           </div>
+          <img src="./assets/images/Snapshoot Portfolio-4.png" alt="" class="thumbanail">
         </div>
-        <img src="./assets/images/Snapshoot Portfolio-4.png" alt="" class="thumbanail">
       </div>
-    </div>
-    <div class="trending-post-wrapper">
-      <div class="trending-post">
-        <div class="post-details">
-          <h5 class="post-category">AgriTech</h5>
-          <h2 class="post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab in Kenya</h2>
-          <div class="featured-post-info">
-            <p>Patrick Laryea</p>
+      <div class="trending-post-wrapper">
+        <div class="trending-post">
+          <div class="post-details">
+            <h5 class="post-category">AgriTech</h5>
+            <h2 class="post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab in Kenya</h2>
+            <div class="featured-post-info">
+              <p>Patrick Laryea</p>
+            </div>
           </div>
+          <img src="./assets/images/Snapshoot Portfolio-4.png" alt="" class="thumbanail">
         </div>
-        <img src="./assets/images/Snapshoot Portfolio-4.png" alt="" class="thumbanail">
-      </div>
-    </div>
-    <div class="trending-post-wrapper">
-      <div class="trending-post">
-        <div class="post-details">
-          <h5 class="post-category">AgriTech</h5>
-          <h2 class="post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab in Kenya</h2>
-          <div class="featured-post-info">
-            <p>Patrick Laryea</p>
-          </div>
-        </div>
-        <img src="./assets/images/Snapshoot Portfolio-4.png" alt="" class="thumbanail">
       </div>
     </div>
   </section>
 
-  <section class="category container">
+  <div class="container section-title-wrapper">
+    <span class="pipe"></span>
+    <h2 class="section-title"> Startups </h2>
+  </div>
+  <section class="category container startups-wrapper">
     <div class="section-title-wrapper">
       <span class="pipe"></span>
       <h2 class="section-title"> Startups </h2>
@@ -160,10 +180,22 @@
         </div>
       </div>
     </div>
+    <div class="category-post-wrapper">
+      <div>
+        <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
+        <h5 class="post-category">Startups</h5>
+        <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
+          in Kenya
+        </h2>
+        <div class="post-info">
+          <p>Patrick Laryea</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="news-letter container">
-    <div class="news-letter-wrapper">
+  <section class="news-letter">
+    <div class="news-letter-wrapper container">
       <h3>Sign up for Newsletters</h3>
       <form action="">
         <div class="checkbox-wrapper"><input type="checkbox">FarmEazy</div>
@@ -176,136 +208,142 @@
     </div>
   </section>
 
-  <section class="category container">
+  <section class="container">
     <div class="section-title-wrapper">
       <span class="pipe"></span>
       <h2 class="section-title"> Tech </h2>
     </div>
-    <div class="category-post-wrapper">
-      <div>
-        <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
-        <h5 class="post-category">Tech</h5>
-        <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
-          in Kenya
-        </h2>
-        <div class="post-info">
-          <p>Patrick Laryea</p>
+    <div class="category tech-wrapper">
+      <div class="category-post-wrapper">
+        <div>
+          <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
+          <h5 class="post-category">Tech</h5>
+          <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
+            in Kenya
+          </h2>
+          <div class="post-info">
+            <p>Patrick Laryea</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="category-post-wrapper">
-      <div>
-        <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
-        <h5 class="post-category">Tech</h5>
-        <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
-          in Kenya
-        </h2>
-        <div class="post-info">
-          <p>Patrick Laryea</p>
+      <div class="category-post-wrapper">
+        <div>
+          <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
+          <h5 class="post-category">Tech</h5>
+          <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
+            in Kenya
+          </h2>
+          <div class="post-info">
+            <p>Patrick Laryea</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="category-post-wrapper">
-      <div>
-        <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
-        <h5 class="post-category">Tech</h5>
-        <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
-          in Kenya
-        </h2>
-        <div class="post-info">
-          <p>Patrick Laryea</p>
+      <div class="category-post-wrapper">
+        <div>
+          <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
+          <h5 class="post-category">Tech</h5>
+          <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
+            in Kenya
+          </h2>
+          <div class="post-info">
+            <p>Patrick Laryea</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="category container">
+  <section class="container">
     <div class="section-title-wrapper">
       <span class="pipe"></span>
       <h2 class="section-title"> Farm to Table </h2>
     </div>
-    <div class="category-post-wrapper">
-      <div>
-        <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
-        <h5 class="post-category">Farm to Table</h5>
-        <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
-          in Kenya
-        </h2>
-        <div class="post-info">
-          <p>Patrick Laryea</p>
+    <div class="category farm-to-tbl-wrapper">
+      <div class="category-post-wrapper">
+        <div>
+          <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
+          <h5 class="post-category">Farm to Table</h5>
+          <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
+            in Kenya
+          </h2>
+          <div class="post-info">
+            <p>Patrick Laryea</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="category-post-wrapper">
-      <div>
-        <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
-        <h5 class="post-category">Farm to Table</h5>
-        <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
-          in Kenya
-        </h2>
-        <div class="post-info">
-          <p>Patrick Laryea</p>
+      <div class="category-post-wrapper">
+        <div>
+          <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
+          <h5 class="post-category">Farm to Table</h5>
+          <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
+            in Kenya
+          </h2>
+          <div class="post-info">
+            <p>Patrick Laryea</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="category-post-wrapper">
-      <div>
-        <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
-        <h5 class="post-category">Farm to Table</h5>
-        <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
-          in Kenya
-        </h2>
-        <div class="post-info">
-          <p>Patrick Laryea</p>
+      <div class="category-post-wrapper">
+        <div>
+          <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
+          <h5 class="post-category">Farm to Table</h5>
+          <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
+            in Kenya
+          </h2>
+          <div class="post-info">
+            <p>Patrick Laryea</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="category container">
+  <section class="container">
     <div class="section-title-wrapper">
       <span class="pipe"></span>
       <h2 class="section-title"> Sustainability </h2>
     </div>
-    <div class="category-post-wrapper">
-      <div>
-        <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
-        <h5 class="post-category">Sustainability</h5>
-        <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
-          in Kenya
-        </h2>
-        <div class="post-info">
-          <p>Patrick Laryea</p>
+    <div class="category sustainability-wrapper">
+      <div class="category-post-wrapper">
+        <div>
+          <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
+          <h5 class="post-category">Sustainability</h5>
+          <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
+            in Kenya
+          </h2>
+          <div class="post-info">
+            <p>Patrick Laryea</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="category-post-wrapper">
-      <div>
-        <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
-        <h5 class="post-category">Sustainability</h5>
-        <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
-          in Kenya
-        </h2>
-        <div class="post-info">
-          <p>Patrick Laryea</p>
+      <div class="category-post-wrapper">
+        <div>
+          <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
+          <h5 class="post-category">Sustainability</h5>
+          <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
+            in Kenya
+          </h2>
+          <div class="post-info">
+            <p>Patrick Laryea</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="category-post-wrapper">
-      <div>
-        <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
-        <h5 class="post-category">Sustainability</h5>
-        <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
-          in Kenya
-        </h2>
-        <div class="post-info">
-          <p>Patrick Laryea</p>
+      <div class="category-post-wrapper">
+        <div>
+          <img src="./assets/images/Snapshoot Portfolio-4.png" alt="">
+          <h5 class="post-category">Sustainability</h5>
+          <h2 class="post-title category-post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab
+            in Kenya
+          </h2>
+          <div class="post-info">
+            <p>Patrick Laryea</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <hr>
-  <section class="trending container">
+
+  <section class="trending container stories-wrapper">
     <div class="section-title-wrapper">
       <span class="pipe"></span>
       <h2 class="section-title"> Stories</h2>
@@ -313,10 +351,17 @@
     <div class="trending-post-wrapper">
       <div class="trending-post">
         <div class="post-details">
-          <h5 class="post-category">Startups</h5>
-          <h2 class="post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab in Kenya</h2>
-          <div class="featured-post-info">
-            <p>Patrick Laryea</p>
+          <div>
+            <h5 class="post-category">Startups</h5>
+            <h2 class="post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab in Kenya</h2>
+            <div class="featured-post-info">
+              <p>Patrick Laryea</p>
+            </div>
+          </div>
+          <div>
+            <p class="story-preface">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint animi distinctio
+              ad laudantium corporis ullam veritatis, praesentium odio aliquid quidem.
+            </p>
           </div>
         </div>
         <img src="./assets/images/Snapshoot Portfolio-4.png" alt="" class="thumbanail">
@@ -325,10 +370,17 @@
     <div class="trending-post-wrapper">
       <div class="trending-post">
         <div class="post-details">
-          <h5 class="post-category">Sustainability</h5>
-          <h2 class="post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab in Kenya</h2>
-          <div class="featured-post-info">
-            <p>Patrick Laryea</p>
+          <div>
+            <h5 class="post-category">Startups</h5>
+            <h2 class="post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab in Kenya</h2>
+            <div class="featured-post-info">
+              <p>Patrick Laryea</p>
+            </div>
+          </div>
+          <div>
+            <p class="story-preface">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint animi distinctio
+              ad laudantium corporis ullam veritatis, praesentium odio aliquid quidem.
+            </p>
           </div>
         </div>
         <img src="./assets/images/Snapshoot Portfolio-4.png" alt="" class="thumbanail">
@@ -337,10 +389,17 @@
     <div class="trending-post-wrapper">
       <div class="trending-post">
         <div class="post-details">
-          <h5 class="post-category">Startups</h5>
-          <h2 class="post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab in Kenya</h2>
-          <div class="featured-post-info">
-            <p>Patrick Laryea</p>
+          <div>
+            <h5 class="post-category">Startups</h5>
+            <h2 class="post-title">OpenAI leads $23.5M round in DentLabs, an AI powered aquaponics lab in Kenya</h2>
+            <div class="featured-post-info">
+              <p>Patrick Laryea</p>
+            </div>
+          </div>
+          <div>
+            <p class="story-preface">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint animi distinctio
+              ad laudantium corporis ullam veritatis, praesentium odio aliquid quidem.
+            </p>
           </div>
         </div>
         <img src="./assets/images/Snapshoot Portfolio-4.png" alt="" class="thumbanail">
@@ -384,13 +443,6 @@
       </div>
     </div>
   </footer>
-
-
-
-
-
-
-
 
   <script src="./js/app.js"></script>
 </body>
