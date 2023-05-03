@@ -1,0 +1,42 @@
+.article-wrapper {
+  padding-top: 15em;
+}
+
+.post-title {
+  font-size: 1.8rem;
+}
+
+.article--photo-credits {
+  margin: 0.8em 0;
+}
+
+.article--photo-credits p .credits-label {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.article-content {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 33px;
+  margin: 5em 0;
+}
+
+@media screen and (min-width: 720px) {
+  .post-banner-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0px;
+  }
+
+  .article-wrapper {
+    padding-top: 8em;
+    width: 60%;
+  }
+
+  .post-info {
+    margin: 1em 0;
+  }
+}
